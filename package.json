@@ -1,0 +1,17 @@
+{
+  "name": "ancestry-fed-test-2017",
+  "version": "1.0.0",
+  "description": "Tech test for Ancestry, cut up with simple Angular modal and form val. ",
+  "main": "index.js",
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-modal-service": "^0.10.1",
+    "font-awesome": "^4.7.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "David Randell",
+  "license": "ISC"
+}

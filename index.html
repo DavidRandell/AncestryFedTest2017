@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html ng-app="fedTest">
+
+<head>
+    <title>Ancestry - FED Test 2017</title>
+    <link type="text/css" rel="stylesheet" href="css/reset.css" />
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+
+
+    <script src="https://use.fontawesome.com/6233f0ec4c.js"></script>
+    <script src="./node_modules/angular/angular.min.js"></script>
+    <script src="./node_modules/angular-modal-service/dst/angular-modal-service.min.js"></script>
+
+    <script src="js/app.js"></script>
+    <script src='./js/MainController/main.controller.js'></script>
+    <script src='./js/SubscribeModal/subscribe-modal.contoller.js'></script>
+</head>
+
+<body>
+
+    <header>
+        <nav id="breadcrumbs">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">US Military Collection</a></li>
+            </ul>
+        </nav>
+        <h1>U.S. Military Collection</h1>
+    </header>
+    <div id="wrapper">
+        <div class="inside flex">
+            <section id="mainContent" class="container col">
+                <h2>World conflicts. Personal stories.</h2>
+                <p>Throughout history, millions of courageous men and women have served and protected their country in times of conflict. Were your ancestors among them? It’s never been easier to find out on Ancestry.com, the world’s largest online collection
+                    of family history resources, including millions of military records spanning from before the Revolutionary War all the way up to Vietnam.</p>
+                <img src="images/contentImg.jpg" alt="Image of 2 military troops" />
+                <p>Search through enlightening historical documents from every major U.S. war from the American Revolution through Vietnam, including draft registration cards, veterans’ gravesites, soldier pension indexes, enlistment records, muster rolls
+                    and much more.</p>
+                <button class="btn primary">Search all Military records</button>
+            </section>
+            <aside id="sidebar" class="col">
+                <div id="collections" class="container">
+                    <h3>Featured Collections</h3>
+                    <ul>
+                        <li><a href="#">U.S. World War II Army Enlistment Records</a></li>
+                        <li><a href="#">U.S. Civil War Soldiers, 1861–1865</a></li>
+                        <li><a href="#">WWII U.S. Navy Muster Rolls, 1938–1949</a></li>
+                        <li><a href="#">U.S. World War II Draft Registration Cards, 1942</a></li>
+                        <li><a href="#">World War I Draft Registration Cards</a></li>
+                        <li><a href="#">U.S. Marine Corp Muster Rolls, 1798–1958</a></li>
+                    </ul>
+                    <button class="btn secondary">See all collections</button>
+                </div>
+                <div id="subscribe" class="container" ng-controller="MainController">
+                    <h3>Let us help you discover your story</h3>
+                    <p>Begin your free family tree with a few simple facts. We’ll help you discover a lot more. Start your tree by subscribing today for a free trial.</p>
+                    <button ng-click="showModel()" class="btn secondary">Subscribe today</button>
+                </div>
+            </aside>
+        </div>
+    </div>
+    <footer>
+        <ul>
+            <li><small>&copy; 1997&ndash;2015 Ancestry</small></li>
+            <li><a href="#">Corporate Information</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms and Conditions</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

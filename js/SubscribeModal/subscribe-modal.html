@@ -1,0 +1,24 @@
+<div class="overlayBg flex">
+    <div class="overlay">
+        <span ng-click="closeModal()" class="closeBtn">x</span>
+        <h4>Subscribe Today</h4>
+        <form name="subscribeForm" ng-submit="submitForm(subscribeForm)" novalidate>
+            <div class="form-group">
+                <div ng-class="{'error-label' : subscribeForm.$submitted && subscribeForm.firstName.$invalid}">
+                    <label for="firstName">Your first name </label><span class="error-label" ng-show="subscribeForm.$submitted && subscribeForm.firstName.$invalid"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>Required</span>
+                    <input type="text" name="firstName" class="form-control" ng-model="firstName" required>
+                </div>
+                <div ng-class="{'error-label' : subscribeForm.$submitted && subscribeForm.lastName.$invalid}">
+                    <label for="lastName">Your last name</label><span class="error-label" ng-show="subscribeForm.$submitted && subscribeForm.lastName.$invalid"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>Required</span>
+                    <input type="text" name="lastName" class="form-control" ng-model="lastName" required>
+                </div>
+            </div>
+            <div class="form-item" ng-class="{'error-label' : subscribeForm.$submitted && subscribeForm.email.$invalid}">
+                <label for="email">Email</label><span class="error-label" ng-show="subscribeForm.$submitted && subscribeForm.email.$invalid"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i>A valid email is required</span>
+                <input type="email" name="email" class="form-control" ng-model="email" required>
+            </div>
+            <button type="submit" class="btn primary small">Get Started</button>
+        </form>
+        <p><small>By creating and account, you agree to <a href="#">Ancestry Terms and Conditions</a> and understand that your information will be used in accordance with our <a href="#">Privacy Statement</a>, including that we will send you emails about our service and special offers.</small></p>
+    </div>
+</div>
